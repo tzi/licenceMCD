@@ -10,3 +10,16 @@
 .cf-hidden {
     display: none;
 }
+
+a[href]{
+    color: inherit;
+    text-decoration: none;
+}
+
+a[href]::after {
+    content: " (https://tzi.github.io/licenseMCD/" attr(href) ") ";
+}
+
+a[href^="http"]::after {
+    content: " (" attr(href) ") ";
+}
