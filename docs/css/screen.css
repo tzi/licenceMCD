@@ -4,7 +4,7 @@
 
 .l-page {
     display: block;
-    width: 21cm;
+    max-width: 21cm;
     min-height: 29.7cm;
     padding: 15mm 18mm;
     border: 1px solid #D8D8D8;
@@ -13,4 +13,15 @@
 
     background: white url(https://basehold.it/i/20/888888);
     background-position: 18mm 15mm;
+}
+
+
+@media (max-width: 21cm) {
+    .l-content {
+        padding: 0;
+    }
+    
+    .l-page {
+        padding: 20px;
+    }
 }

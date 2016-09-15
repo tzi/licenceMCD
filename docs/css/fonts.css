@@ -5,13 +5,13 @@ html {
 }
 
 h1 {
-    padding: 12px 0 7px;
+    padding: 7px 0 0;
     margin: 0 0 10px;
 
     font-family: 'Amaranth', sans-serif;
     font-size: 30px;
     font-weight: normal;
-    line-height: 1;
+    line-height: 40px;
     color: #3B617D;
     text-transform: uppercase;
     text-align: center;
@@ -55,4 +55,35 @@ ul,
 ol,
 dl {
     margin: 0;
+    padding: 0 0 0 80px;
+    list-style: none;
+    counter-reset: list;
+}
+
+dl {
+    padding-left: 0;
+}
+
+
+@media (max-width: 21cm) {
+    ul,
+    ol {
+        padding-left: 40px;
+    }
+}
+
+ol > li {
+    position: relative;
+    counter-increment: list;
+}
+
+ol > li::before {
+    content: counter(list)".";
+    position: absolute;
+    right: 100%;
+    margin-right: 0.5em;
+}
+
+p {
+    margin-top: 20px;
 }
