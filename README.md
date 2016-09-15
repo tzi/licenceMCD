@@ -1,6 +1,7 @@
 License MCD
 ======
 
-Contenu du cours Conception & Intégration WEB - IUT Lyon 3 Jean Moulin - LP Market Digit
+Supports du cours de Conception & Intégration WEB<br>
+Université Lyon 3 Jean Moulin - Licence Professionnelle Market Digital
 
-Inspiré par le travail de [@dflorent](https://github.com/dflorent/conception-integration-web)
+Inspiré par les cours de [@dflorent](https://github.com/dflorent/conception-integration-web)
