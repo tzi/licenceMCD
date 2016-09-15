@@ -1,6 +1,6 @@
-@page
-{
+@page {
     margin: 18mm 15mm;
+    counter-reset: page 1;
 }
 
 .l-header,
@@ -9,8 +9,4 @@
 .cf-disabled,
 .cf-hidden {
     display: none;
-}
-
-textarea {
-    box-shadow: none;
 }
