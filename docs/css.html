@@ -16,7 +16,7 @@
 <div class="l-content">
     <div class="l-page">
         <h1>
-            L'antisèche HTML
+            L'antisèche CSS
         </h1>
         <div class="subh1">Université Jean Moulin Lyon 3 – Licence Professionnelle Marketing Digital 2016</div>
 
@@ -24,13 +24,14 @@
         <dl>
 
             <dt><code>font-size</code></dt>
-            <dd>Permet de définir la taille de la police</dd>
+            <dd>Détermine la taille de la police</dd>
 
             <dt><code>font-family</code></dt>
-            <dd>Permet de définir une police personnalisée, par exemple : Arial, Georgia, Times New Roman, etc.<br>
-                Vous pouvez utiliser <a href="https://fonts.google.com/">Google Fonts</a> pour trouver des polices un peu originales.    
+            <dd>
+                Détermine une <em>(pile)</em> police personnalisée, par exemple : Arial, Georgia, Times New Roman, etc.<br>
+                Vous pouvez utiliser <a href="https://fonts.google.com">Google Fonts</a> pour trouver des polices un peu originales    
+                et <a href="http://fontpair.co">Font Pair</a> si vous ne voulez que les meilleures.
             </dd>
-            
 
             <dt><code>font-weight</code></dt>
             <dd>Valeurs possibles: bold | normal</dd>
@@ -44,98 +45,98 @@
 
         <h2>Le texte</h2>
         <dl>
-            <dt><code>&lt;strong></code> ou <code>&lt;b></code></dt>
-            <dd>Mettre en gras</dd>
+            <dt><code>text-align</code></dt>
+            <dd>Valeurs possibles: left | right | center | justify</dd>
+
+            <dt><code>text-decoration</code></dt>
+            <dd>Valeurs possibles: underline | line-through | none</dd>
+
+            <dt><code>text-transform</code></dt>
+            <dd>Valeurs possibles: uppercase | lowercase | capitalize | none</dd>
+
+            <dt><code>letter-spacing</code></dt>
+            <dd>Détermine l'espacement entre les lettres</dd>
+
+            <dt><code>word-spacing</code></dt>
+            <dd>Détermine l'espacement entre les mots</dd>
+
+            <dt><code>line-height</code></dt>
+            <dd>Détermine l'espacement entre les lignes</dd>
+        </dl>
+
+        <h2>Le fond</h2>
+        <dl>
+            <dt><code>background-color</code></dt>
+            <dd>
+                Détermine la couleur de remplissage du fond.<br>
+                Vous pouvez utiliser <a href="http://clrs.cc">la palette de couleur clrs</a> pour commencer avec des couleurs agréables.
+            </dd>
             
-            <dt><code>&lt;em></code> ou <code>&lt;i></code></dt>
-            <dd>Mettre en italique</dd>
+            <dt><code>background-image</code></dt>
+            <dd>Détermine l'image de remplissage du fond. On peut s'en servir pour générer des gradients.</dd>
 
-            <dt><code>&lt;u></code></dt>
-            <dd>Sousligner</dd>
-
-            <dt><code>&lt;strike></code> ou <code>&lt;s></code></dt>
-            <dd>Barre un texte</dd>
-
-            <dt><code>&lt;br></code></dt>
-            <dd>Aller à la ligne</dd>
-
-            <dt><code>&lt;sub></code></dt>
-            <dd>Placer du texte en indice</dd>
-
-            <dt><code>&lt;sup></code></dt>
-            <dd>Placer du texte en exposant</dd>
+            <dt><code>background-repeat</code></dt>
+            <dd>Valeurs possibles: repeat | repeat-x | repeat-y | no-repeat</dd>
         </dl>
 
-        <h2>Les liens</h2>
+        <h2>Les bordures</h2>
         <dl>
-            <dt><code>&lt;a href="http://www.example.com"></code></dt>
-            <dd>Un lien vers une page web</dd>
+            <dt><code>border-width</code></dt>
+            <dd>
+                Détermine la largeur de la bordure.
+            </dd>
 
-            <dt><code>&lt;a href="mailto:prenom.nom@univ-lyon3.fr"></code></dt>
-            <dd>Une lien vers l'écriture d'un mail avec le destinataire pré-rempli</dd>
+            <dt><code>border-style</code></dt>
+            <dd>Valeurs possibles: solid | dashed | dotted</dd>
 
-            <dt><code>&lt;a href="#somewhere"></code></dt>
-            <dd>Un lien vers une partie de la même page web</dd>
+            <dt><code>border-color</code></dt>
+            <dd>
+                Détermine la couleur de la bordure.
+            </dd>
+
+            <dt><code>border-radius</code></dt>
+            <dd>
+                Détermine le rayon de l'arrondi des bordures.<br>
+                Vous pouvez utiliser la valeur 50% pour faire un cercle.
+            </dd>
         </dl>
 
-        <h2>Les médias</h2>
+        <h2>Le dimensionnement</h2>
         <dl>
-            <dt><code>&lt;img src="http://www.example.com/mon-image.png"></code></dt>
-            <dd>Une image</dd>
-        </dl>
-        
-        <h2>Les listes</h2>
-        <dl>
-            <dt><code>&lt;ol></code></dt>
-            <dd>Une liste ordonnée : Numérote les éléments de la liste</dd>
+            <dt><code>width</code>, <code>min-width</code> et <code>max-width</code></dt>
+            <dd>
+                Détermine la largeur du contenu d'un élément.<br>
+            </dd>
 
-            <dt><code>&lt;ul></code></dt>
-            <dd>Une liste non-ordonnée : Ajoute des puces devant le éléments de la liste</dd>
+            <dt><code>height</code>, <code>min-height</code> et <code>max-height</code></dt>
+            <dd>
+                Détermine la hauteur du contenu d'un élément.<br>
+            </dd>
 
-            <dt><code>&lt;li></code></dt>
-            <dd>Un élément d'un liste : Peut être enfant d'un &lt;ol> ou d'un &lt;ul></dd>
-        </dl>
+            <dt><code>margin-top</code>, <code>margin-left</code>, <code>margin-bottom</code> et <code>margin-right</code></dt>
+            <dd>
+                Détermine la marge externe de l'élément.<br>
+            </dd>
 
-        <h2>La sémantique</h2>
-        <dl>
-            <dt><code>&lt;abbr></code></dt>
-            <dd>Indique une abréviation</dd>
-
-            <dt><code>&lt;acronym></code></dt>
-            <dd>Indique un acronyme</dd>
-
-            <dt><code>&lt;address></code></dt>
-            <dd>Indique une adresse</dd>
-
-            <dt><code>&lt;blockquote></code></dt>
-            <dd>Longue citation</dd>
-
-            <dt><code>&lt;q></code></dt>
-            <dd>Courte citation</dd>
+            <dt><code>padding-top</code>, <code>padding-left</code>, <code>padding-bottom</code> et <code>padding-right</code></dt>
+            <dd>
+                Détermine la marge interne de l'élément.<br>
+            </dd>
         </dl>
 
-        <h2>Les balises pour les formalités</h2>
+        <h2>La syntaxe</h2>
         <dl>
-            <dt><code>&lt;!DOCTYPE html></code></dt>
-            <dd>Initialiser un code HTML <em>(pas vraiment une balise, elle n'a pas besoin d'être fermée)</em></dd>
+            <dt>Utiliser les propriétés</dt>
+            <dd><code>selecteur { propriété: valeur; }</code></dd>
+            
+            <dt>Charger une feuille de style externe</dt>
+            <dd><code>&lt;link rel="stylesheet" href="style.css" /></code></dd>
 
-            <dt><code>&lt;!-- Comment Text --></code></dt>
-            <dd>Un commentaire HTML</dd>
+            <dt>Définir des styles en interne</dt>
+            <dd><code>&lt;style>selecteur { propriété: valeur; }&lt;/style></code></dd>
 
-            <dt><code>&lt;html></code></dt>
-            <dd>Une page HTML</dd>
-
-            <dt><code>&lt;head></code></dt>
-            <dd>Les informations sur la page</dd>
-
-            <dt><code>&lt;title></code></dt>
-            <dd>Le titre de la page : Ce titre est utilisé dans l'onglet de votre navigateur</dd>
-
-            <dt><code>&lt;meta></code></dt>
-            <dd>Une information de la page : Cette information ne sera pas affichée sur le navigateur</dd>
-
-            <dt><code>&lt;body></code></dt>
-            <dd>Le contenu de la page</dd>
+            <dt>Définir du style en ligne</dt>
+            <dd><code>&lt;balise style="propriété: valeur;"></code></dd>
         </dl>
     </div>
 </div>
