@@ -1,0 +1,16 @@
+@page
+{
+    margin: 18mm 15mm;
+}
+
+.l-header,
+.bill-setting,
+.c-toggle,
+.cf-disabled,
+.cf-hidden {
+    display: none;
+}
+
+textarea {
+    box-shadow: none;
+}

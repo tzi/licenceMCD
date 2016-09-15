@@ -1,0 +1,82 @@
+/* FONTS */
+html {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1 {
+    padding: 12px 0 7px;
+    margin: 0 0 10px;
+
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    color: #3B617D;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subh1 {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/* QUIZZ */
+.question {
+    margin-top: 40px;
+    counter-increment: question;
+}
+
+.label {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.label::before {
+    display: inline-block;
+    content: counter(question)".";
+    margin-right: 0.5em;
+}
+
+.free-slot {
+    display: flex;
+}
+
+.free-slot > * {
+    flex: 0;
+    margin-right: 1em;
+    white-space: nowrap;
+}
+
+.free-slot::after {
+    content: '';
+    display: block;
+    flex: 1;
+    height: 20px;
+    border-bottom: 1px dotted darkslategray;
+}
+
+.multiple-choice {
+    padding: 20px 0 0 60px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.multiple-choice > li {
+    padding: 0;
+    margin: 0;
+}
+
+.multiple-choice > li::before {
+    content: '\25A1';
+    margin-right: 1em;
+}
