@@ -1,31 +1,3 @@
-/* FONTS */
-html {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-h1 {
-    padding: 12px 0 7px;
-    margin: 0 0 10px;
-
-    font-family: 'Amaranth', sans-serif;
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 1;
-    color: #3B617D;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.subh1 {
-    display: block;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-
-/* QUIZZ */
 .question {
     margin-top: 40px;
     counter-increment: question;

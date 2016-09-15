@@ -1,0 +1,49 @@
+html {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1 {
+    padding: 12px 0 7px;
+    margin: 0 0 10px;
+
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    color: #3B617D;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subh1 {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    padding: 0;
+    margin: 40px 0 20px;
+
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+code {
+    display: inline-block;
+    font-family: monospace, monospace;
+    font-size: inherit;
+    line-height: 21px;
+    height: 20px;
+    color: #3B617D;
+}
+
+ul,
+ol,
+dl {
+    margin: 0;
+}
