@@ -1,4 +1,4 @@
-License MCD
+Licence MCD
 ======
 
 Supports du cours de Conception & Intégration WEB<br>
